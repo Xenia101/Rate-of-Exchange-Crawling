@@ -34,7 +34,7 @@ def crawling(Max_time):
         page_num += 1
 
 def save_json():
-    with open('test.json', 'w', encoding='utf-8') as f:
+    with open('./json/sample.json', 'w', encoding='utf-8') as f:
         json.dump(crawling(Max_time), f, indent="\t")
 
 if __name__ == "__main__": 
