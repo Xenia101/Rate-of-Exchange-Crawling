@@ -2,8 +2,6 @@
 
 [네이버 환율](https://finance.naver.com/marketindex/) 기반 Daily rate of Exchange Crawling
 
-## 예시
-
 ## 설치 방법
 - 실행 환경 (테스트 환경)
   - Windows 10 or Ubuntu Linux
