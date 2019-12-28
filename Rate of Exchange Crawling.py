@@ -4,6 +4,7 @@ import numpy as np
 import json
 
 # settings..
+country = "USD"
 Max_time = '2019.11.15' # datatime you want
 exchange_list = {}
 
@@ -11,7 +12,7 @@ def crawling(Max_time):
     page_num = 0
     exchange_dict_edit = {}
     while True:
-        URL = "https://finance.naver.com/marketindex/exchangeDailyQuote.nhn?marketindexCd=FX_USDKRW&page={}".format(page_num)
+        URL = "https://finance.naver.com/marketindex/exchangeDailyQuote.nhn?marketindexCd=FX_{0}KRW&page={1}".format(country, page_num)
         html = urlopen(URL).read()
         soup = BeautifulSoup(html, "html.parser")
 
