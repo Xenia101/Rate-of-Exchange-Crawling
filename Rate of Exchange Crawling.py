@@ -1,14 +1,14 @@
-from bs4 import BeautifulSoup
+from matplotlib import pyplot as plt
 from urllib.request import urlopen
-import numpy as np
+from bs4 import BeautifulSoup
 import json
 
 # settings..
 country = "USD"
-Max_time = '2019.11.15' # datatime you want
+Max_page_num = 3 # datatime you want
 exchange_list = {}
 
-def crawling(Max_time):
+def crawling(Max_page_num):
     page_num = 0
     exchange_dict_edit = {}
     while True:
@@ -29,14 +29,23 @@ def crawling(Max_time):
         for x in range(len(data_ex_time)):
             exchange_dict_edit[data_ex_time[x]] = data_exchange[x]
 
-        if Max_time in data_ex_time:
+        if page_num == Max_page_num:
             return exchange_dict_edit
        
         page_num += 1
 
-def save_json():
+def save_json(dic_data):
     with open('./json/sample.json', 'w', encoding='utf-8') as f:
-        json.dump(crawling(Max_time), f, indent="\t")
+        json.dump(dic_data, f, indent="\t")
 
-if __name__ == "__main__": 
-    save_json()
+if __name__ == "__main__":
+
+    dic_data = crawling(Max_page_num)
+    save_json(dic_data)
+
+    X = [k.split('.')[1]+"/"+k.split('.')[2] for k in dic_data]
+    Y = [v for v in dic_data.values()]
+
+    plt.plot(list(reversed(X)), Y)
+    plt.gca().invert_yaxis()
+    plt.show()
