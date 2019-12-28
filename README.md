@@ -22,7 +22,7 @@ Max_page_num = 10 # datetime you want
 python Rate of Exchange Crawling.py
 ```
 
-- OUPUT (.json)
+- OUPUT (.json and matplotlib Graph)
 ```json
 {
 	"2019.12.27": 1160.5,
