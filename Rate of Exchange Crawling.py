@@ -1,11 +1,13 @@
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 import numpy as np
-
+                      
+# settings..
+Max_P = 400
 exchange_list = []
 ex_time_list  = []
 
-for page_num in range(1,2):
+for page_num in range(1,Max_P):
     URL = "https://finance.naver.com/marketindex/exchangeDailyQuote.nhn?marketindexCd=FX_USDKRW&page={}".format(page_num)
     html = urlopen(URL).read()
     soup = BeautifulSoup(html, "html.parser")
@@ -18,5 +20,5 @@ for page_num in range(1,2):
                 
 exchange_list = np.array(exchange_list)
 ex_time_list = np.array(ex_time_list)
-print(exchange_list.shape)
+print(exchange_list)
 print(ex_time_list)
