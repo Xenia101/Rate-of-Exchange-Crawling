@@ -12,7 +12,7 @@
 - 변수 세팅
 ```python
 country = "USD"   # country you want
-Max_page_num = 10 # datetime you want
+Max_page_num = 10 # page_number you want
 ```
 
 - RUN
