@@ -4,8 +4,8 @@ from bs4 import BeautifulSoup
 import json
 
 # settings..
-country = "USD"
-Max_page_num = 3 # datatime you want
+country = "USD"  # country you want
+Max_page_num = 3 # page_number you want
 exchange_list = {}
 
 def crawling(Max_page_num):
