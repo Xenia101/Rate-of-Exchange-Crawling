@@ -1,6 +1,6 @@
 # Rate of Exchange Crawling
 
-[네이버 환율](https://finance.naver.com/marketindex/) 기반 Daily rate of Exchange Crawling
+[네이버 환율](https://finance.naver.com/marketindex/) Based Daily rate of Exchange Crawling
 
 ## 설치 방법
 - 실행 환경 (테스트 환경)
