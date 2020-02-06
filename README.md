@@ -7,9 +7,9 @@
   - Windows 10 or Ubuntu Linux
   - Python3.x
   
-## 사용 방법
+## Usage
 
-- 변수 세팅
+- Variable setting
 ```python
 country = "USD"   # country you want
 Max_page_num = 10 # page_number you want
