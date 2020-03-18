@@ -7,7 +7,7 @@
   - Windows 10 or Ubuntu Linux
   - Python3.x
   
-## Usage
+## Example / Usage
 
 - Variable setting
 ```python
