@@ -5,11 +5,11 @@
 ## 설치 방법
 - 실행 환경 (테스트 환경)
   - Windows 10 or Ubuntu Linux
-  - Python3.x
+  - Python **3.6**
   
 ## Example / Usage
 
-- Variable setting
+- Variable a settings
 ```python
 country = "USD"   # country you want
 Max_page_num = 10 # page_number you want
