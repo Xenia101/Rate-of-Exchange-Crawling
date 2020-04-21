@@ -2,10 +2,9 @@
 
 [네이버 환율](https://finance.naver.com/marketindex/) Based Daily rate of Exchange Crawling
 
-## 설치 방법
-- 실행 환경 (테스트 환경)
-  - Windows 10 or Ubuntu Linux
-  - Python **3.6**
+## Execution / Test Environment
+- Windows 10 or Ubuntu Linux
+- Python **3.6**
   
 ## Example / Usage
 
